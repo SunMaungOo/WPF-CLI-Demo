@@ -1,0 +1,17 @@
+﻿<Window x:Class="CLI.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CLI"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="350" Width="525" Background="Black"
+        xmlns:view="clr-namespace:CLI">
+
+    <Grid>
+        <TextBox x:Name="txtCommand" HorizontalAlignment="Left" Height="23" Margin="0,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="507" KeyUp="txtCommand_KeyUp"/>
+        <TextBlock x:Name="txtDisplay" HorizontalAlignment="Left" Margin="0,63,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Height="256" Width="517" Foreground="#FF48FF03"/>
+        <view:ScrollListBox x:Name="lstAutoSuggest" HorizontalAlignment="Left" Height="110" Margin="0,38,0,0" VerticalAlignment="Top" Width="142" Visibility="Collapsed" MouseDoubleClick="lstAutoSuggest_MouseDoubleClick" SelectionChanged="lstAutoSuggest_SelectionChanged"/>
+
+    </Grid>
+</Window>
